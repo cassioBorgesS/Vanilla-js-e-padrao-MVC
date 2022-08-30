@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>lista de anotações</title>
+</head>
+<body>
+    <main>
+        <section class="formulario">
+            <textarea name="" id="textoAnotacao" cols="30" rows="10" value="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ad porro, officia ea sint dignissimos molestias ducimus, libero fugit odio, asperiores blanditiis consequuntur. Cum nesciunt numquam labore optio fuga minus!</textarea>
+            <button id="botaoAnotacao" onclick="ctrl.adicionar()">Criar</button>
+        </section>
+        <section class="tabela">
+            <table>
+                <thead class="cabecalho-tabela">
+                    <tr>
+                        <th>Código</th>
+                        <th>Anotação</th>
+                        <th>Data</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody class="linhas-tabela">
+                    <tr>
+                        <td>1</td>
+                        <td>agesdgb</td>
+                        <td>24/03/2022</td>
+                        <td><div onclick="ctrl.remover(1)">x</div></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>sbsfbssfb</td>
+                        <td>24/03/2022</td>
+                        <td><div onclick="ctrl.remover(2)">x</div></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <dialog id="dialogo">
+                <button id="fechar">x</button>
+            </dialog>
+        </section>
+    </main>
+    <script src="js/banco/Banco.js"></script>
+    <script src="js/modulo/Item.js"></script>
+    <script src="js/modulo/Modulo.js"></script>
+    <script src="js/view/View.js"></script>
+    <script src="js/controller/Controller.js"></script>
+    <script>const ctrl = new Controller()</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.formulario{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.formulario textarea{
+    height: 150px;
+    width: 80vw;
+    margin: 0 30px;
+    max-width: 80vw;
+    padding: 5px;
+}
+
+.formulario button{
+    background-color: midnightblue;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    height: 30px;
+    width: 30vw;
+    font-size: 1rem;
+    transition: ease-in-out 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #191970cf;
+    cursor: pointer;
+}
+
+.tabela {
+    padding: 0 30px;
+}
+
+.tabela table{
+    border-collapse: collapse;
+    min-width: calc(100vw - 60px);
+}
+
+.cabecalho-tabela th{
+    background-color: midnightblue;
+    border: 1px solid midnightblue;
+    color: white;
+    padding: 3px 10px;
+    text-align: center;
+}
+
+.cabecalho-tabela th:first-child{
+    border-radius: 30px 0 0 0;
+    border: none;
+}
+
+.cabecalho-tabela th:last-child{
+    border-radius: 0 30px 0 0;
+    border: none;
+}
+
+
+.linhas-tabela td {
+    border: 1px solid black;
+    padding: 3px 10px;
+    text-align: center;
+}
